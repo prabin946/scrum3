@@ -1,0 +1,64 @@
+id: 1
+name: Interstellar
+description: A group of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+genre: SCI_FI
+actors: Matthew McConaughey, Anne Hathaway, Jessica Chastain
+director: Christopher Nolan
+year: 2014
+------------------------
+id: 2
+name: John Wick
+description: An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.
+genre: ACTION
+actors: Keanu Reeves, Michael Nyqvist, Alfie Allen
+director: Chad Stahelski
+year: 2014
+------------------------
+id: 3
+name: La La Land
+description: While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.
+genre: MUSICAL
+actors: Ryan Gosling, Emma Stone, John Legend
+director: Damien Chazelle
+year: 2016
+------------------------
+id: 4
+name: 1917
+description: April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message.
+genre: WAR
+actors: George MacKay, Dean-Charles Chapman, Richard Madden
+director: Sam Mendes
+year: 2019
+------------------------
+id: 5
+name: The Notebook
+description: A young man and a rich young woman fall in love in the 1940s, but her parents do not approve.
+genre: ROMANCE
+actors: Ryan Gosling, Rachel McAdams, James Garner
+director: Nick Cassavetes
+year: 2004
+------------------------
+id: 6
+name: Oppenheimer
+description: The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.
+genre: BIOPIC
+actors: Cillian Murphy, Emily Blunt, Matt Damon
+director: Christopher Nolan
+year: 2023
+------------------------
+id: 7
+name: Mad Max Fury Road
+description: In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners.
+genre: ACTION
+actors: Tom Hardy, Charlize Theron, Nicholas Hoult
+director: George Miller
+year: 2015
+------------------------
+id: 8
+name: Blade Runner 2049
+description: A young Blade Runner's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.
+genre: SCI_FI
+actors: Ryan Gosling, Harrison Ford, Ana de Armas
+director: Denis Villeneuve
+year: 2017
+------------------------

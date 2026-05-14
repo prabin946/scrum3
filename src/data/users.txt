@@ -1,0 +1,40 @@
+id: 101
+username: Elena_G
+password: Password.2024!
+email: elena.garcia@mail.com
+actor favorite: Ryan Gosling
+genre favorite: ROMANCE
+director favorite: Nick Cassavetes
+------------------------
+id: 102
+username: AlexSciFi
+password: Crypto_292021#
+email: alex.space@mail.com
+actor favorite: Matthew McConaughey
+genre favorite: SCI_FI
+director favorite: Christopher Nolan
+------------------------
+id: 103
+username: SarahW
+password: Safe.Pass_99*
+email: sarah.warrior@mail.com
+actor favorite: George MacKay
+genre favorite: WAR
+director favorite: Sam Mendes
+------------------------
+id: 104
+username: ActionFan
+password: Keanu.Reeves_1
+email: john.fan@mail.com
+actor favorite: Keanu Reeves
+genre favorite: ACTION
+director favorite: Chad Stahelski
+------------------------
+id: 105
+username: MovieLover
+password: Admin.Access_77&
+email: movie.lover@mail.com
+actor favorite: Cillian Murphy
+genre favorite: BIOPIC
+director favorite: Christopher Nolan
+------------------------

@@ -1,10 +1,8 @@
 package dao;
-
 import model.User;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class UserDaoImpl {
 
     public static class UserDaoTxtImpl implements UserDAO {
@@ -33,18 +31,5 @@ public class UserDaoImpl {
 
         @Override
         public boolean delete(int id) {
-            User userToRemove = null;
-            for (User user : userList) {
-                if (user.getiD() == id) {
-                    userToRemove = user;
-                    break;
-                }
-            }
-            if (userToRemove != null) {
-                userList.remove(userToRemove);
-                return true;
-            }
             return false;
         }
-    }
-}

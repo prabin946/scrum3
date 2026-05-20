@@ -3,10 +3,7 @@ package dao;
 import model.User;
 import java.util.List;
 
-public interface UserDAO {
+public interface UserDAO extends DAO<User>{
 
-    void add(User user);
-    User findById(int id);
-    List<User> findAll();
-    boolean delete(int id);
+
 }

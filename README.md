@@ -31,7 +31,7 @@ In this second iteration, our team adopted a structured **SCRUM** methodology to
 ## 2. Iteration 2 Planning
 The primary objective was the architectural transformation of the system. Our planning focused on three main pillars:
 * **Security:** Graceful error handling in the authentication system.
-* **Scalability:** Implementing a database-ready structure for users.
+* **Scalability:** Implementing a db-ready structure for users.
 * **Personalization:** Prioritizing modularity so new features can be plugged in without breaking existing code.
 
 We also placed heavy emphasis on the **GitHub workflow**, using branches to manage concurrent development effectively.
@@ -64,7 +64,7 @@ If the engine finds no matches (e.g., for a new user), it defaults to displaying
 * **Unit Testing:** We plan to increase the use of automated testing to catch small bugs in the logic before they reach the final build.
 
 ## 7. Future Project Extensions
-* **Data Persistence:** Connecting the system to external JSON or SQL database files.
+* **Data Persistence:** Connecting the system to external JSON or SQL db files.
 * **Graphical User Interface (GUI):** Transitioning from CLI to **JavaFX** to display movie posters and create an immersive experience.
 * **Collaborative Filtering:** Implementing advanced algorithms based on preferences of users with similar tastes.
 

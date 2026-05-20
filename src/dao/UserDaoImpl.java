@@ -2,49 +2,89 @@ package dao;
 
 import model.User;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoImpl {
+public class UserDaoImpl implements  UserDAO{
 
-    public static class UserDaoTxtImpl implements UserDAO {
-        List<User> userList = new ArrayList<>();
 
-        @Override
-        public void add(User user) {
-            userList.add(user);
-        }
+    @Override
+    public List<User> findAll() {
 
-        @Override
-        public User findById(int id) {
-            for (User user : userList) {
-                if (user.getiD() == id) {
-                    return user;
+        String sql = "SELECT * FROM user";
+        List<User> users = new ArrayList<>();
+
+        try (Connection connection = DatabaseConnection.getConncetion();
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)
+        ){
+
+            try (ResultSet resultSet = preparedStatement.executeQuery()){
+
+                while (resultSet.next()){
+                    users.add(mapRow(resultSet));
                 }
             }
-            return null;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
+        return users;
+    }
+    public User mapRow(ResultSet resultSet){
 
-        @Override
-        public List<User> findAll() {
-            return userList;
-        }
+        // Variables
+        return null;
+    }
 
+    @Override
+    public User findById(int id) {
 
-        @Override
-        public boolean delete(int id) {
-            User userToRemove = null;
-            for (User user : userList) {
-                if (user.getiD() == id) {
-                    userToRemove = user;
-                    break;
+        String sql = "SELECT * FROM USER WHERE userId = ?";
+        try (Connection connection = DatabaseConnection.getConncetion();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql)
+        ){
+            try (ResultSet resultSet = preparedStatement.executeQuery()){
+
+                if (resultSet.next()){
+                    return mapRow(resultSet);
                 }
             }
-            if (userToRemove != null) {
-                userList.remove(userToRemove);
-                return true;
-            }
-            return false;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
+
+        return null;
+    }
+
+    @Override
+    public User create(User object) {
+        return null;
+    }
+
+    @Override
+    public boolean update(User object) {
+        return false;
+    }
+
+    @Override
+    public boolean delete(User object) {
+
+        String sql = "DELETE FROM USER WHERE userId = ?";
+        try (Connection connection = DatabaseConnection.getConncetion();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ){
+            int rowAffected = preparedStatement.executeUpdate();
+
+            return rowAffected == 1;
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return false;
     }
 }

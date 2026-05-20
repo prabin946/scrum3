@@ -18,7 +18,7 @@ public class UsersManagement implements UserAccess, Visualize {
     private final Path usersFile = Paths.get("src/data/users.txt");
 
     private String formatUser(User user) {
-        return  "id: " + user.getiD() + "\n" +
+        return  "id: " + user.getIdUser() + "\n" +
                 "username: " + user.getName() + "\n" +
                 "password: " + user.getPassword() + "\n" +
                 "email: " + user.getEmail() + "\n" +

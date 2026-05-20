@@ -93,7 +93,7 @@ public class SuperUserManagement implements MoviesManager, AdministratorUser, Vi
         try {
             List<String> allLines = Files.readAllLines(usersFile);
             List<String> savesLines = new ArrayList<>();
-            String foundId = "id: " + user.getiD();
+            String foundId = "id: " + user.getIdUser();
             boolean saving = true;
 
             for (String lines: allLines) {
